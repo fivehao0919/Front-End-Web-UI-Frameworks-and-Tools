@@ -23,18 +23,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        input[type="radio"] + label {
-            width: auto;
-            text-align: right;
-            vertical-align: top;
-            margin: 0 10px 0 0;
-        }
-        input[type="text"] + span {
-            right:30px;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -209,23 +197,34 @@
                     <div class="form-group">
                         <label for="tables" class="col-sm-2 control-label">
                         Number of Guests</label>
-                        <div class="col-sm-4">
-                            <p style="padding:0.1px;"></p>
-                            <input type="radio" name="tables" value="option1" id="option1">
-                            <label for="option1">1</label>
-                            <input type="radio" name="tables" value="option2" id="option2">
-                            <label for="option2">2</label>
-                            <input type="radio" name="tables" value="option3" id="option3">
-                            <label for="option3">3</label>
-                            <input type="radio" name="tables" value="option4" id="option4">
-                            <label for="option4">4</label>
-                            <input type="radio" name="tables" value="option5" id="option5">
-                            <label for="option5">5</label>
-                            <input type="radio" name="tables" value="option6" id="option6">
-                            <label for="option6">6</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>1</p>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>2</p>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>3</p>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>4</p>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>5</p>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="approve" value="">
+                                <p>6</p>
+                            </label>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group has-feedback">
                         <label for="dateandtime" class="col-sm-2 control-label">
                             Date and Time</label>
                         <div class="col-sm-3">
@@ -234,7 +233,7 @@
                             <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
                         </div>
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-offset-1 col-sm-3">
                             <input type="text" class="form-control" id="time"
                             name="time" placeholder="Time">
                             <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
